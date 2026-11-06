@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mode édition · Orwen</title>
+<meta name="description" content="Réglage du mode édition.">
+<link rel="canonical" href="https://orwen.fr/edition/">
+
+<meta property="og:title" content="Mode édition · Orwen"><meta property="og:description" content="Réglage du mode édition."><meta property="og:type" content="website"><meta property="og:url" content="https://orwen.fr/edition/">
+<meta name="theme-color" content="#110d0c">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../style/site.css">
+<meta name="robots" content="noindex">
+</head>
+<body>
+<div class="vp anime"><div class="site t-braise">
+<a class="s-saut" href="#contenu">Aller au contenu</a>
+<header class="s-head"><div class="s-wrap"><div class="s-head-in"><a class="s-logo" href="../">Orwen</a><nav class="s-nav" aria-label="Navigation principale"><a href="../#jeux">Jeux</a><a href="../#a-propos">À propos</a><a href="../#contact">Contact</a></nav><span class="s-lang"><b aria-current="true">FR</b><a href="../en/" lang="en" hreflang="en" aria-label="English">EN</a></span></div></div></header>
+<main id="contenu" data-page="edition">
+<article class="s-doc"><div class="s-wrap"><div class="s-prose s-ed-page"><h1 class="s-title">Mode édition</h1><p>Cette page est pour Lucas. Elle allume, dans ce navigateur seulement, de quoi modifier le site depuis ses pages : textes, avancement, libellés, ordre de la liste, photos. Pour tout le monde, le site reste le même.</p><p class="s-ed-etat" id="ed-etat" role="status"></p><form id="ed-reglages"><fieldset><legend>Où enregistrer les changements</legend><label><input type="radio" name="mode" value="local" checked> Sur ce PC, dans les fichiers du site (aperçu lancé par <code>py outils/editer.py</code>)</label><label><input type="radio" name="mode" value="github"> Sur le site en ligne, par son dépôt GitHub</label></fieldset><fieldset id="ed-github" hidden><legend>GitHub</legend><label>Dépôt <input name="depot" placeholder="compte/depot" autocomplete="off" spellcheck="false"></label><label>Branche <input name="branche" value="main" autocomplete="off" spellcheck="false"></label><label>Jeton <input name="jeton" type="password" autocomplete="off"></label><p>Le jeton se crée sur github.com, dans Settings › Developer settings › Fine-grained tokens : accès à ce seul dépôt, permission « Contents : Read and write », avec une date d'expiration. Il reste dans ce navigateur et n'est envoyé qu'à GitHub.</p></fieldset><p class="s-cta"><button class="s-btn" type="submit">Allumer le mode édition</button><button class="s-btn alt" type="button" id="ed-quitter">L'éteindre</button></p></form><h2>Comment ça marche</h2><ul><li>Une barre apparaît en bas de chaque page. Tout ce que tu changes reste en brouillon dans ce navigateur, visible de toi seul ; « Publier » envoie le brouillon d'un coup, et le site public suit environ une minute plus tard.</li><li><b>Textes.</b> Ce qui se modifie sur place est entouré de pointillés : clique dedans et écris. Entrée valide, Échap annule. Dans un texte fait de plusieurs lignes, Entrée ajoute une ligne, et trois petits boutons la montent, la descendent ou la suppriment.</li><li><b>Accueil.</b> Glisse une vignette sur une autre pour échanger leurs places (au doigt, par sa poignée), ou sers-toi des flèches. L'œil masque une fiche. « Changer » choisit les trois icônes du haut.</li><li><b>Page d'un jeu.</b> « Icône », « Sortie » (son lien Google Play), « Modifier » (pourcentage et libellé) ; et, sur les photos, de quoi en ajouter, en retirer et les ranger.</li><li><b>Menu « … » de la barre.</b> Les libellés, une nouvelle fiche, les textes anglais à revoir, l'historique des publications et de quoi en annuler une.</li><li>L'œil de la barre montre la page telle que les visiteurs la verront.</li><li>L'anglais ne se traduit pas tout seul : une page anglaise se modifie comme la française.</li><li>Un brouillon commencé sur le téléphone n'est pas sur le PC : publie avant de changer d'appareil.</li><li>Les politiques de confidentialité, les mentions légales et l'adresse des pages ne se modifient pas d'ici.</li></ul><p><a href="../">Aller à l'accueil</a></p></div></div></article>
+</main>
+<footer class="s-foot"><div class="s-wrap"><span class="s-copy">© 2026 Orwen · Grenoble</span><a href="../mentions-legales/">Mentions légales</a><a href="mailto:contact@orwen.fr">contact@orwen.fr</a></div></footer>
+</div></div>
+<script src="../edition.js"></script>
+<script>try{if(localStorage.getItem("orwen-edition")){var s=document.createElement("script");s.src="../edition.js";document.head.appendChild(s)}}catch(e){}</script>
+</body>
+</html>
